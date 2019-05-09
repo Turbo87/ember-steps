@@ -4,12 +4,10 @@ import { isPresent } from '@ember/utils';
 import { computed } from '@ember-decorators/object';
 
 export default class StepNode {
-  constructor(sm, name, context, onActivate, onDeactivate) {
+  constructor(sm, name, context) {
     this.sm = sm;
     this.name = name;
     this.context = context;
-    this.onActivate = onActivate;
-    this.onDeactivate = onDeactivate;
   }
 
   get hasNext() {
